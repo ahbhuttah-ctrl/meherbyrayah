@@ -1,1 +1,485 @@
+/* ================================
+   MEHER JEWELRY
+   BABY PINK LUXURY THEME
+================================ */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8fb;
+    color: #3d3036;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 7%;
+
+    background: #ffffff;
+
+    border-bottom: 1px solid #f3dce5;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 4px;
+
+    color: #c98da5;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4a3a41;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #c98da5;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            rgba(255, 228, 238, 0.75),
+            rgba(255, 248, 251, 0.9)
+        );
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-small-title {
+    color: #b97994;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+
+    line-height: 1.1;
+
+    color: #3d3036;
+
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    color: #705e66;
+
+    font-size: 18px;
+}
+
+.hero-button {
+    display: inline-block;
+
+    padding: 14px 32px;
+
+    background: #d59ab1;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.hero-button:hover {
+    background: #bd7f99;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   GENERAL SECTION
+================================ */
+
+.about,
+.collections,
+.featured,
+.contact {
+    padding: 90px 7%;
+}
+
+.section-label {
+    text-align: center;
+
+    color: #c487a0;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+}
+
+.about h2,
+.collections h2,
+.featured h2,
+.contact h2 {
+    text-align: center;
+
+    font-size: 40px;
+
+    color: #3d3036;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================================
+   ABOUT
+================================ */
+
+.about {
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.about-content {
+    max-width: 800px;
+
+    margin: auto;
+}
+
+.about-content p:not(.section-label) {
+    color: #705e66;
+
+    margin-bottom: 15px;
+
+    font-size: 17px;
+}
+
+
+/* ================================
+   COLLECTIONS
+================================ */
+
+.collections {
+    background: #fff4f8;
+
+    text-align: center;
+}
+
+.collection-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+    gap: 25px;
+
+    margin-top: 40px;
+}
+
+.collection-card {
+    background: #ffffff;
+
+    padding: 30px 20px;
+
+    border-radius: 16px;
+
+    border: 1px solid #f1d9e2;
+
+    transition: 0.3s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 12px 30px rgba(150, 80, 110, 0.12);
+}
+
+.collection-image {
+    font-size: 55px;
+
+    margin-bottom: 15px;
+}
+
+.collection-card h3 {
+    color: #4b3941;
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+.collection-card p {
+    color: #806d75;
+}
+
+
+/* ================================
+   FEATURED PRODUCTS
+================================ */
+
+.featured {
+    background: #ffffff;
+
+    text-align: center;
+}
+
+.featured-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 30px;
+
+    margin-top: 40px;
+}
+
+.product-card {
+    background: #fff8fb;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    border: 1px solid #f1d9e2;
+
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 12px 30px rgba(150, 80, 110, 0.12);
+}
+
+.product-image {
+    height: 230px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #ffe9f1;
+
+    border-radius: 12px;
+
+    font-size: 70px;
+
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 21px;
+
+    color: #44353c;
+
+    margin-bottom: 8px;
+}
+
+.product-card p {
+    color: #806d75;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact {
+    background: #fff4f8;
+
+    text-align: center;
+}
+
+.contact > p:not(.section-label) {
+    max-width: 650px;
+
+    margin: 0 auto 25px;
+
+    color: #705e66;
+}
+
+.contact-buttons {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+.contact-button {
+    display: inline-block;
+
+    padding: 13px 28px;
+
+    background: #d59ab1;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 25px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #bd7f99;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+    background: #3d3036;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+.footer h2 {
+    color: #f4c6d7;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #eadce1;
+
+    margin-bottom: 10px;
+}
+
+.copyright {
+    font-size: 13px;
+
+    margin-top: 20px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 75vh;
+
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .about,
+    .collections,
+    .featured,
+    .contact {
+        padding: 65px 20px;
+    }
+
+    .about h2,
+    .collections h2,
+    .featured h2,
+    .contact h2 {
+        font-size: 32px;
+    }
+}
